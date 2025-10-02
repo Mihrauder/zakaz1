@@ -1,0 +1,49 @@
+{
+  "name": "zakaz",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "pm2:start": "pm2 start deploy/pm2/ecosystem.config.cjs && pm2 save",
+    "pm2:restart": "pm2 restart deploy/pm2/ecosystem.config.cjs",
+    "pm2:stop": "pm2 stop deploy/pm2/ecosystem.config.cjs || true",
+    "lint": "eslint",
+    "webhook:setup": "node scripts/setup-webhook.js",
+    "webhook:info": "node -e \"require('https').get('https://api.telegram.org/bot' + process.env.TELEGRAM_BOT_TOKEN + '/getWebhookInfo', r => { let d=''; r.on('data', c => d+=c); r.on('end', () => console.log(JSON.stringify(JSON.parse(d), null, 2))); }).on('error', console.error)\"",
+    "tunnel:ngrok": "ngrok http 3000",
+    "tunnel:cloudflare": "cloudflared tunnel --url http://localhost:3000"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "ejs": "^3.1.10",
+    "morgan": "^1.10.0",
+    "body-parser": "^1.20.2",
+    "@hookform/resolvers": "^3.9.0",
+    "@marsidev/react-turnstile": "^1.3.1",
+    "better-sqlite3": "^12.4.1",
+    "clsx": "^2.1.1",
+    "googleapis": "^143.0.0",
+    "is-mobile": "^4.0.0",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.53.0",
+    "swiper": "^11.1.9",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
