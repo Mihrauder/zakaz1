@@ -26,7 +26,7 @@ export default function Contacts() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Telegram</h3>
             <p className="text-slate-300 text-sm mb-4">Быстрые сообщения</p>
-            <span className="text-blue-400 text-sm font-medium">@your_username</span>
+            <span className="text-blue-400 text-sm font-medium">@Storm_boy11</span>
           </a>
 
           {/* WhatsApp */}
@@ -43,7 +43,7 @@ export default function Contacts() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">WhatsApp</h3>
             <p className="text-slate-300 text-sm mb-4">Звонки и сообщения</p>
-            <span className="text-green-400 text-sm font-medium">+7 (999) 999-99-99</span>
+            <span className="text-green-400 text-sm font-medium">+7 (950) 292-95-64</span>
           </a>
 
           {/* Phone */}
@@ -55,7 +55,7 @@ export default function Contacts() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Телефон</h3>
             <p className="text-slate-300 text-sm mb-4">Прямые звонки</p>
-            <span className="text-purple-400 text-sm font-medium">+7 (999) 999-99-99</span>
+            <span className="text-purple-400 text-sm font-medium">+7 (950) 292-95-64</span>
           </div>
         </div>
 
@@ -82,3 +82,4 @@ export default function Contacts() {
     </section>
   );
 }
+
