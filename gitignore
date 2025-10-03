@@ -53,6 +53,14 @@ marine-compass-473111-d7-a0ea1032b5b9.json
 # vercel
 .vercel
 
+# PM2 logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.production
 
 *.tsbuildinfo
 next-env.d.ts

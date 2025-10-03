@@ -14,7 +14,7 @@ export default function Contacts() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Telegram */}
           <a 
-            href="https://t.me/your_username" 
+            href="https://t.me/Storm_boy11" 
             target="_blank" 
             rel="noopener noreferrer"
             className="card p-6 text-center hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25 animate-fade-in-up delay-200"
@@ -31,7 +31,7 @@ export default function Contacts() {
 
           {/* WhatsApp */}
           <a 
-            href="https://wa.me/79999999999" 
+            href="https://wa.me/79502929564" 
             target="_blank" 
             rel="noopener noreferrer"
             className="card p-6 text-center hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 animate-fade-in-up delay-400"
@@ -43,7 +43,7 @@ export default function Contacts() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">WhatsApp</h3>
             <p className="text-slate-300 text-sm mb-4">Звонки и сообщения</p>
-            <span className="text-green-400 text-sm font-medium">+7 (950) 292-95-64</span>
+            <span className="text-green-400 text-sm font-medium">8 (950) 292-95-64</span>
           </a>
 
           {/* Phone */}
@@ -55,7 +55,7 @@ export default function Contacts() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Телефон</h3>
             <p className="text-slate-300 text-sm mb-4">Прямые звонки</p>
-            <span className="text-purple-400 text-sm font-medium">+7 (950) 292-95-64</span>
+            <span className="text-purple-400 text-sm font-medium">8 (950) 292-95-64</span>
           </div>
         </div>
 
@@ -82,4 +82,3 @@ export default function Contacts() {
     </section>
   );
 }
-
