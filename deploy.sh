@@ -116,5 +116,11 @@ pm2 status
 
 log "✅ Деплой завершен!"
 log "Приложение доступно по адресу: http://localhost:3000"
+log ""
+log "📋 Следующие шаги:"
+log "1. Настройте DNS: bafservice.com -> IP_СЕРВЕРА"
+log "2. Настройте HTTPS: ./setup-https.sh"
+log "3. Настройте Telegram webhook: ./setup-telegram-webhook.sh"
+log ""
 log "Для просмотра логов: pm2 logs"
 log "Для перезапуска: pm2 restart all"
