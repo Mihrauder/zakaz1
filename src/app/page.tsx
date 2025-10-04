@@ -5,6 +5,8 @@ import Gallery from "@/components/Gallery";
 import Reviews from "@/components/reviews/Reviews";
 import Contacts from "@/components/Contacts";
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   return (
     <div className="min-h-screen">
