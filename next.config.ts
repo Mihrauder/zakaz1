@@ -6,12 +6,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // Отключаем пререндеринг
-  experimental: {
-    esmExternals: false,
-  },
-  // Принудительно делаем все страницы динамическими
-  generateStaticParams: false,
 };
 
 export default nextConfig;
