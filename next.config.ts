@@ -6,6 +6,12 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Убеждаемся, что статические файлы включаются
+  experimental: {
+    outputFileTracingRoot: undefined,
+  },
+  // Включаем статические файлы в standalone
+  distDir: '.next',
 };
 
 export default nextConfig;
