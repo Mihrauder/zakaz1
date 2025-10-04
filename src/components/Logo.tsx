@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useState } from "react";
 
@@ -36,3 +38,4 @@ export default function Logo({ className = "", size = "md" }: LogoProps) {
     </div>
   );
 }
+
