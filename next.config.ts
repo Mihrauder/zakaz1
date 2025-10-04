@@ -1,16 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  output: "export",
   trailingSlash: false,
   images: {
     unoptimized: true,
   },
-  // Убеждаемся, что статические файлы включаются
-  experimental: {
-    outputFileTracingRoot: undefined,
-  },
-  // Включаем статические файлы в standalone
+  // Отключаем статическую оптимизацию для export режима
   distDir: '.next',
 };
 
