@@ -2,8 +2,8 @@ module.exports = {
   apps: [
     {
       name: "zakaz-site",
-      script: "npm",
-      args: "start",
+      script: "node",
+      args: ".next/standalone/server.js",
       cwd: require('path').join(__dirname, '..', '..'),
       env: {
         PORT: 3000,
@@ -30,5 +30,6 @@ module.exports = {
     },
   ],
 };
+
 
 

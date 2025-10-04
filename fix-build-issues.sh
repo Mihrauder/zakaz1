@@ -67,7 +67,7 @@ log "Создаем PostCSS конфигурацию..."
 cat > postcss.config.js << 'EOF'
 module.exports = {
   plugins: {
-    tailwindcss: {},
+    "@tailwindcss/postcss": {},
     autoprefixer: {},
   },
 }
