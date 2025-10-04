@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npx next dev --turbopack",
-    "build": "npx next build --turbopack",
+    "dev": "npx next dev",
+    "build": "npx next build",
     "start": "npx next start",
     "pm2:start": "pm2 start deploy/pm2/ecosystem.config.cjs && pm2 save",
     "pm2:restart": "pm2 restart deploy/pm2/ecosystem.config.cjs",
